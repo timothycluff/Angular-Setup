@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App" ng-controller="AppCtrl">
+<head>
+    <meta charset="UTF-8">
+    <title>UI Mockup</title>
+    <base href="/home.html">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" /> <!--Bootstrap-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lumx/1.5.0/lumx.css"> <!--LumX-->
+</head>
+<body>
+
+<div class="main-body-content">
+    <div ng-controller="MenuCtrl" class="row">
+        <div ng-include src="app/shared/menu/ui_menu.html"></div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>                          <!--jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script> <!--Bootstrap-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>                     <!--Angular-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>               <!--Angular Route-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lumx/1.5.0/lumx.min.js"></script>                              <!--LumX-->
+
+<script src="app/AppCtrl.js"></script>
+<script src="app/AppModule.js"></script>
+<script src="app/AppRoutes.js"></script>
+
+<!--Menu-->
+<script src="app/shared/menu/MenuCtrl.js"></script>
+
+<!--Home-->
+<script src="app/components/home/HomeCtrl.js"></script>
+<script src="app/components/home/HomeService.js"></script>
+
+<!--Item-->
+<script src="app/components/item/ItemCtrl.js"></script>
+<script src="app/components/item/ItemService.js"></script>
+
+<!--Purchasing(vendors)-->
+<script src="app/components/purchasing/vendor/VendorCtrl.js"></script>
+<script src="app/components/purchasing/vendor/VendorService.js"></script>
+
+<!--Purchasing(purchase orders)-->
+<script src="app/components/purchasing/purchase_order/PurchaseOrderCtrl.js"></script>
+<script src="app/components/purchasing/purchase_order/PurchaseOrderService.js"></script>
+
+</body>
+</html>
